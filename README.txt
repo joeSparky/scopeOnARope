@@ -1,27 +1,32 @@
-Scope on a Rope prototype
+Scope on a Rope
 
 Files:
 - main.py
 - requirements.txt
 
 Setup on Windows
-1. Put these files in a folder, for example:
-   C:\Users\joe\verify_scope01\scope_on_rope
+* Put these files in a folder, for example:
+  C:\Users\Scope\scopeOnARope
 
-2. Put your looping background video in the same folder and name it:
-   background.mp4
+* Put your looping background video in the same folder and name it:
+  background.mp4
 
-3. Open Command Prompt in that folder.
+* python -m venv venv
+  
+* venv\Scripts\activate
 
-4. Create and activate a virtual environment:
-   py -3.12 -m venv venv
-   venv\Scripts\activate
+* python -m pip install --upgrade pip
 
-5. Install requirements:
-   pip install -r requirements.txt
+* pip install -r requirements.txt
 
-6. Run:
-   python main.py
+* Run:
+  python main.py
+
+* to start Scope on a Rope at startup, create a link to startScope.bat in the startup folder
+  on Windows 
+  open a run window with Windows + R
+  execute shell:startup
+  in the startup directory, create a shortcut to the startScope.bat script
 
 Notes
 - If the microscope is not found, change CAMERA_INDEX in main.py from 0 to 1 or 2.

@@ -1,3 +1,4 @@
 @echo off
-cd /d C:\Users\joemp\verify27
-venv\Scripts\python.exe main.py
+pushd "%~dp0"
+"%~dp0venv\Scripts\python.exe" "%~dp0main.py"
+popd
